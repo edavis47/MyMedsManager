@@ -209,11 +209,12 @@ C:\Users\baint\source\repos\MyMedsManager\bin\Debug\netcoreapp3.1\runtimes\win-a
 C:\Users\baint\source\repos\MyMedsManager\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\baint\source\repos\MyMedsManager\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\baint\source\repos\MyMedsManager\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\baint\source\repos\MyMedsManager\obj\Debug\netcoreapp3.1\MyMedsManager.csproj.CoreCompileInputs.cache
-C:\Users\baint\source\repos\MyMedsManager\obj\Debug\netcoreapp3.1\MyMedsManager.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\baint\source\repos\MyMedsManager\obj\Debug\netcoreapp3.1\MyMedsManager.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\baint\source\repos\MyMedsManager\obj\Debug\netcoreapp3.1\Razor\Views\Medications\Create.cshtml.g.cs
 C:\Users\baint\source\repos\MyMedsManager\obj\Debug\netcoreapp3.1\Razor\Views\Medications\Delete.cshtml.g.cs
 C:\Users\baint\source\repos\MyMedsManager\obj\Debug\netcoreapp3.1\Razor\Views\Medications\Details.cshtml.g.cs
 C:\Users\baint\source\repos\MyMedsManager\obj\Debug\netcoreapp3.1\Razor\Views\Medications\Edit.cshtml.g.cs
 C:\Users\baint\source\repos\MyMedsManager\obj\Debug\netcoreapp3.1\Razor\Views\Medications\Index.cshtml.g.cs
+C:\Users\baint\source\repos\MyMedsManager\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
+C:\Users\baint\source\repos\MyMedsManager\obj\Debug\netcoreapp3.1\MyMedsManager.csproj.CoreCompileInputs.cache
+C:\Users\baint\source\repos\MyMedsManager\obj\Debug\netcoreapp3.1\MyMedsManager.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\baint\source\repos\MyMedsManager\obj\Debug\netcoreapp3.1\MyMedsManager.MvcApplicationPartsAssemblyInfo.cache

@@ -8,12 +8,17 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MyMedsManager.Data;
 using MyMedsManager.Models;
+using System.Security.Principal;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNet.Identity;
+
 
 namespace MyMedsManager.Controllers
 {
     public class MedicationsController : Controller
     {
         private readonly ApplicationDbContext _context;
+
 
         public MedicationsController(ApplicationDbContext context)
         {
@@ -24,7 +29,8 @@ namespace MyMedsManager.Controllers
         [Authorize]
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Medication.ToListAsync());
+            var user = User.Identity.GetUserId();
+            return View(await _context.Medication.Where(x => x.UserId == user).ToListAsync());
         }
 
         // GET: Medications/Details/5
@@ -63,6 +69,7 @@ namespace MyMedsManager.Controllers
         {
             if (ModelState.IsValid)
             {
+                medication.UserId = User.Identity.GetUserId();
                 _context.Add(medication);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
