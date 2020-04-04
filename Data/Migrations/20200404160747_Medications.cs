@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MyMedsManager.Migrations
+namespace MyMedsManager.Data.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class Medications : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,9 +12,9 @@ namespace MyMedsManager.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Medicine = table.Column<string>(nullable: true),
+                    Medicine = table.Column<string>(maxLength: 60, nullable: false),
                     MedQuantity = table.Column<int>(nullable: false),
-                    Dosage = table.Column<string>(nullable: true),
+                    Dosage = table.Column<string>(nullable: false),
                     Notes = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

@@ -13,9 +13,9 @@ namespace MyMedsManager.Controllers
 {
     public class MedicationsController : Controller
     {
-        private readonly MedicationContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public MedicationsController(MedicationContext context)
+        public MedicationsController(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -59,7 +59,7 @@ namespace MyMedsManager.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         
-        public async Task<IActionResult> Create([Bind("Id,Medicine,MedQuantity,Dosage,Notes")] Medication medication)
+        public async Task<IActionResult> Create([Bind("Id,Medicine,MedQuantity,Dosage,Notes,UserId")] Medication medication)
         {
             if (ModelState.IsValid)
             {
